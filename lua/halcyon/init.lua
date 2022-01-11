@@ -8,6 +8,7 @@ local coc = require("setup.coc")
 local common = require("setup.common")
 local dashboard = require("setup.dashboard")
 local easymotion = require("setup.easymotion")
+local gitsigns = require('setup.gitsigns')
 local html = require("setup.html")
 local blankline = require("setup.indent-blankline")
 local lspsaga = require("setup.lsp-saga")
@@ -36,6 +37,7 @@ local function set_groups()
         common,
         dashboard,
         easymotion,
+        gitsigns,
         html,
         blankline,
         lspsaga,
