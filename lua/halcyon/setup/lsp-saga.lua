@@ -1,6 +1,6 @@
 local c = require("...colors")
 
-local lsp-saga = {
+local lspsaga = {
     DiagnosticError = {fg = c.red},
     DiagnosticWarning = {fg = c.orange},
     DiagnosticInformation = {fg = c.blue},
@@ -22,6 +22,15 @@ local lsp-saga = {
     DefinitionIcon = {fg = c.blue},
     ReferencesIcon = {fg = c.blue},
     TargetWord = {fg = c.blue},
+    LspErrorVirtual = {fg = c.red},
+    LspWarningVirtual = {fg = c.orange},
+    LspInformationVirtual = {fg = c.green},
+    LspHintVirtual = {fg = c.blue},
+    LspErrorHighlight = {fg = c.red},
+    LspWarningHighlight = {fg = c.orange},
+    LspInformationHighlight = {fg = c.green},
+    LspHintHighlight = {fg = c.blue},
+    lspReference = {fg = c.fg}
 }
 
-return lsp-saga
+return lspsaga

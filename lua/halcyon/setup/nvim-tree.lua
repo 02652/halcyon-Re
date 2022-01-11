@@ -1,9 +1,9 @@
 local c = require("...colors")
 local utils = require("...utils").set_transparent
 
-local nvim-tree = {
+local nvimtree = {
     NvimTreeRootFolder = {fg = c.blue, style = "italic"},
-    NvimTreeNormal = {fg = c.fg, bg = set_transparent(c.bg0)},
+    NvimTreeNormal = {fg = c.fg, bg = set_transparent(c.bg)},
     NvimTreeGitDirty = {fg = c.yellow},
     NvimTreeGitNew = {fg = c.green},
     NvimTreeImageFile = {fg = c.purple},
@@ -16,7 +16,7 @@ local nvim-tree = {
     LspDiagnosticsError = {fg = c.red},
     LspDiagnosticsWarning = {fg = c.orange},
     LspDiagnosticsInformation = {fg = c.grey},
-    LspDiagnosticsHint = {fg = c.blue},
+    LspDiagnosticsHint = {fg = c.blue}
 }
 
-return nvim-tree
+return nvimtree

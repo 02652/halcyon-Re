@@ -1,6 +1,6 @@
 local c = require("...colors")
 
-local ale-vim = {
+local ale = {
     ALEError = {fg = c.red},
     ALEWarning = {fg = c.orange},
     ALEInfo = {fg = c.blue},
@@ -10,6 +10,12 @@ local ale-vim = {
     ALEVirtualTextError = {fg = c.red},
     ALEVirtualTextWarning = {fg = c.yellow},
     ALEVirtualTextInfo = {fg = c.blue},
+    ALEWarning = {fg = c.orange},
+    ALEErrorLine = {bg = c.red},
+    ALEWarningLine = {bg = c.orange},
+    ALEInfoLine = {bg = c.green},
+    ALEVirtualTextStyleError = {fg = c.red},
+    ALEVirtualTextStyleWarning = {fg = c.orange}
 }
 
-return ale-vim
+return ale

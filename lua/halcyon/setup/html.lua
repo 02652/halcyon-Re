@@ -17,7 +17,7 @@ local html = {
     htmlH2 = {fg = c.blue, style = "bold"},
     htmlH3 = {fg = c.blue, style = "bold"},
     htmlH4 = {fg = c.blue, style = "bold"},
-    htmlH5 = {fg = c.blue, style = "bold"},
+    htmlH5 = {fg = c.blue, style = "bold"}
 }
 
 return html

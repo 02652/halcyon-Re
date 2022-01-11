@@ -36,7 +36,7 @@ local common = {
     Underlined = {fg = c.blue, bg = c.none, style = "underline"},
     Ignore = {fg = c.grey},
     Error = {fg = c.red, bg = c.none, style = "bold,underline"},
-    Todo = {fg = c.green, bg = c.none, style = "bold,italic"},
+    Todo = {fg = c.green, bg = c.none, style = "bold,italic"}
 }
 
 return common
