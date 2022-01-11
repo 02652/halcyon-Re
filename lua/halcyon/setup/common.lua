@@ -1,5 +1,5 @@
 local c = require("...colors")
-local cfg = require("...config")
+local cfg = require("...config").styles
 
 local common = {
     Type = {fg = c.purple},

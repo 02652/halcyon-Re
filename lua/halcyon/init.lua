@@ -1,6 +1,4 @@
-local c = require("halcyon.colors")
 local utils = require("halcyon.utils")
-local cfg = require("halcyon.config")
 
 -- setup
 local ale = require("setup.ale")

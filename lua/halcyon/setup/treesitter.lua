@@ -1,5 +1,5 @@
 local c = require("...colors")
-local cfg = require("...config")
+local cfg = require("...config").styles
 
 local treesitter = {
     TSComment = {fg = c.grey, bg = c.none, style = cfg.italic_comment},

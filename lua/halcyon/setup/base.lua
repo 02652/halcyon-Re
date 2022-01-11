@@ -1,6 +1,6 @@
 local utils = require("...utils").set_transparent
 local c = require("...colors")
-local cfg = require("...config")
+local cfg = require("...config").styles
 
 local base = {
     Normal = {fg = c.fg, bg = set_transparent(c.bg)},
