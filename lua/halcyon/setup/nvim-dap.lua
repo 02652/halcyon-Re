@@ -1,8 +1,8 @@
 local c = require("...colors")
 
-local dap= {
+local dap = {
     DapBreakpoint = {fg = c.red},
-    DapStopped = {fg = c.green
+    DapStopped = {fg = c.green}
 }
 
 return dap
