@@ -4,6 +4,7 @@ lua package.loaded['halcyon.utils'] = nil
 lua package.loaded['halcyon.config'] = nil
 
 " setup
+lua package.loaded['halcyon.setup'] = nil
 lua package.loaded['halcyon.setup.ale'] = nil
 lua package.loaded['halcyon.setup.base'] = nil
 lua package.loaded['halcyon.setup.buffer-line'] = nil
