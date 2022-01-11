@@ -17,4 +17,5 @@ local colors = {
     none = 'NONE'
 }
 
+
 return colors

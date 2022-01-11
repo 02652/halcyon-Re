@@ -11,7 +11,7 @@ local startify = {
     StartifySlash = {fg = c.purple},
     StartifyHeader = {fg = c.purple},
     StartifySection = {fg = c.red},
-    StartifyFooter = {fg = c.green},
+    StartifyFooter = {fg = c.green}
 }
 
 return startify

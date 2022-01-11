@@ -11,7 +11,7 @@ local nerdtree = {
     NERDTreeCWD = {fg = c.green},
     NERDTreeHelp = {fg = c.grey},
     NERDTreeToggleOn = {fg = c.green},
-    NERDTreeToggleOff = {fg = c.red},
+    NERDTreeToggleOff = {fg = c.red}
 }
 
 return nerdtree

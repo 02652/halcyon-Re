@@ -23,7 +23,7 @@ local markdown = {
     markdownBold = {fg = c.orange, bg = c.none, style = "bold"},
     markdownCode = {fg = c.purple, bg = c.none},
     markdownCodeBlock = {fg = c.green},
-    markdownCodeDelimiter = {fg = c.green},
+    markdownCodeDelimiter = {fg = c.green}
 }
 
 return markdown

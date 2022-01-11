@@ -1,8 +1,8 @@
 local c = require("...colors")
 
-local buffer-line = {
+local bufferline = {
     BufferLineIndicatorSelected = {fg = c.green},
-    BufferLineFill = {bg = c.bg},
+    BufferLineFill = {bg = c.bg}
 }
 
-return buffer-line
+return bufferline
