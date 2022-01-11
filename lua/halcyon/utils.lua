@@ -1,3 +1,4 @@
+local c = require("halcyon.colors")
 local utils = {}
 
 function utils.highlight(group, color)
@@ -13,8 +14,30 @@ function utils.is_valid(val)
     if val == 0 or not val then
         return false
     end
+
     return true
-    
 end
+
+function utils.update_table(...)
+    local groups = {}
+    local arg = {...}
+
+    for i = 1, #arg do
+        for k, v in pairs(arg[i]) do
+            groups[k] = v
+        end
+    end
+
+    return groups
+end
+
+function utils.set_transparent(color)
+    if not utils.is_valid(vim.g.halcyon_transparent) then
+        return color
+    end
+
+    return c.none
+end
+
 
 return utils
