@@ -1,3 +1,4 @@
+local c = require("halcyon.colors")
 local utils = {}
 
 function utils.highlight(group, color)
@@ -17,16 +18,17 @@ function utils.is_valid(val)
     return true
 end
 
-function utils.update_table(table, ...)
+function utils.update_table(...)
+    local groups = {}
     local arg = {...}
 
     for i = 1, #arg do
         for k, v in pairs(arg[i]) do
-            table[k] = v
+            groups[k] = v
         end
     end
 
-    return table
+    return groups
 end
 
 function utils.set_transparent(color)
