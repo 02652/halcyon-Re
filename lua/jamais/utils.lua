@@ -18,10 +18,14 @@ function utils.is_valid(val)
 end
 
 function utils.load(theme)
-  if vim.g.colors_name then
-    vim.cmd 'hi clear'
+  vim.api.nvim_command("hi clear")
+  if vim.fn.exists("syntax_on") then
+      vim.api.nvim_command("syntax reset")
   end
+
+  vim.g.colors_name = "jamais"
   vim.o.termguicolors = true
+
   for _, v in pairs(theme) do
     for group, properties in pairs(v) do
       highlight(group, properties)
