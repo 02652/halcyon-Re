@@ -25,7 +25,10 @@ local gitgutter = require("setup.vim-gitgutter")
 local signify = require("setup.vim-signify")
 local which = require("setup.which-key")
 
-local groups = utils.update_table(
+vim.o.termguicolors = true
+vim.g.colors_name = "halcyon-re"
+
+utils.load(utils.update_table(
     ale,
     base,
     bufferline,
@@ -49,9 +52,4 @@ local groups = utils.update_table(
     gitgutter,
     signify,
     which
-)
-
-vim.o.termguicolors = true
-vim.g.colors_name = "halcyon-re"
-
-utils.load(groups)
+))
