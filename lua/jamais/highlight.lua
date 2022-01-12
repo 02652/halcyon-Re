@@ -490,7 +490,6 @@ jamais.treesitter = {
     TSNamespace = {fg = c.yellow, style = "italic"},
     TSNone = {fg = c.fg},
     TSNumber = {fg = c.purple},
---    TSOperator {fg = c.orange},
     TSParameter = {fg = c.fg},
     TSParameterReference = {fg = c.fg},
     TSProperty = {fg = c.fg},
