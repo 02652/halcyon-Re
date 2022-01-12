@@ -292,7 +292,7 @@ jamais.gitgutter = {
     GitGutterDeleteLine = {bg = c.red},
     GitGutterChangeDeleteLine = {bg = c.purple},
     GitGutterAddLineNr = {bg = c.green},
-    GitGutterChangeLineNr = {bg = c.c.blue},
+    GitGutterChangeLineNr = {bg = c.blue},
     GitGutterDeleteLineNr = {bg = c.red},
     GitGutterChangeDeleteLineNr = {bg = c.purple}
 }
