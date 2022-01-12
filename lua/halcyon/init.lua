@@ -1,7 +1,7 @@
 local utils = require('halcyon.utils')
-local halcyon = require('halcyon.highlight')
+local theme = require('halcyon.highlight')
 
 vim.o.termguicolors = true
-vim.g.colors_name = "halcyon-re"
+vim.g.colors_name = "halcyon-moon"
 
-utils.load(halcyon)
+utils.load(theme)
