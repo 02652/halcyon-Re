@@ -16,7 +16,7 @@ end
 jamais.base = {
     Normal = {fg = c.fg, bg = set_transparent(c.bg)},
     SignColumn = {fg = c.blue, bg = c.none},
-    EndOfBuffer = {fg = c.iu_grey},
+    EndOfBuffer = {fg = c.ui_grey},
     NormalFloat = {fg = c.fg, bg = c.grey},
     FloatBorder = {fg = c.blue, bg = c.grey},
     ColorColumn = {fg = c.none, bg = c.grey},
@@ -301,7 +301,7 @@ jamais.gitsigns = {
     GitSignsAddLn = {fg = c.accent},
     GitSignsChangeLn = {fg = c.green},
     GitSignsDeleteLn = {fg = c.red},
-    GitSignsCurrentLineBlame = {fg = c.gray}
+    GitSignsCurrentLineBlame = {fg = c.grey}
 }
 
 jamais.html = {
