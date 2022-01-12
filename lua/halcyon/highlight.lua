@@ -1,6 +1,6 @@
-local c = require("neon.colors")
-local utils = require("neon.utils")
-local cfg = require("neon.config").styles
+local c = require("halcyon.colors")
+local utils = require("halcyon.utils")
+local cfg = require("halcyon.config").styles
 local halcyon = {}
 
 local function set_transparent(color)
