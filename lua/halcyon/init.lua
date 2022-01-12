@@ -4,4 +4,4 @@ local halcyon = require('halcyon.highlight')
 vim.o.termguicolors = true
 vim.g.colors_name = "halcyon-re"
 
-util.load(halcyon)
+utils.load(halcyon)

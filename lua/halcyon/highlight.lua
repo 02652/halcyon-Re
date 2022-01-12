@@ -177,7 +177,7 @@ halcyon.coc = {
     CocExplorerFileReadonly = {fg = c.purple},
     CocExplorerFileModified = {fg = c.purple},
     CocExplorerFileHidden = {fg = c.grey},
-    CocExplorerHelpLine = {fg = c.purple}
+    CocExplorerHelpLine = {fg = c.purple},
     CocHighlightText = {fg = c.green},
     CocHoverRange = {fg = c.green},
     CocWarningVirtualText = {fg = c.orange},
@@ -306,7 +306,7 @@ halcyon.gitsigns = {
     GitSignsDeleteNr = {fg = c.red},
     GitSignsAddLn = {fg = c.accent},
     GitSignsChangeLn = {fg = c.green},
-    GitSignsDeleteLn = {fg = c.r},
+    GitSignsDeleteLn = {fg = c.red},
     GitSignsCurrentLineBlame = {fg = c.gray}
 }
 
