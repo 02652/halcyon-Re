@@ -1,6 +1,4 @@
 local utils = require 'jamais.utils'
-local theme = require 'jamais.highlight'
-
-vim.g.colors_name = "jamais"
+local theme = require 'jamais.theme'
 
 utils.load(theme)
