@@ -1,12 +1,12 @@
 local c = require("halcyon.colors")
 local utils = {}
 
-function utils.highlight(group, color)
+local function highlight(group, color)
     local style = color.style and "gui=" .. color.style or  "gui=NONE"
     local fg = color.fg and "guifg=" .. color.fg or "guifg=NONE"
     local bg = color.bg and "guibg=" .. color.bg or "guibg=NONE"
     local sp = color.sp and "guisp=" .. color.bg or ""
-    local command = string.format("hi %v %v %v %v", group, style, fg, bg, sp)
+    local command = string.format("highlight %v %v %v %v", group, style, fg, bg, sp)
     vim.api.nvim_command(command)
 end
 
@@ -39,5 +39,15 @@ function utils.set_transparent(color)
     return c.none
 end
 
+function utils.load(g)
+    vim.api.nvim_command("hi clear")
+    if vim.fn.exists("syntax_on") then
+        vim.api.nvim_command("syntax reset")
+    end
+
+    for group, parameters in pairs(g) do
+        highlight(group, parameters)
+    end
+end
 
 return utils

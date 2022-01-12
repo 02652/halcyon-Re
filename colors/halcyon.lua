@@ -1,2 +1,2 @@
 package.loaded["halcyon"] = nil
-require("halcyon").colorscheme()
+require "halcyon"

@@ -25,57 +25,33 @@ local gitgutter = require("setup.vim-gitgutter")
 local signify = require("setup.vim-signify")
 local which = require("setup.which-key")
 
-local halcyon = {}
+local groups = utils.update_table(
+    ale,
+    base,
+    bufferline,
+    coc,
+    common,
+    dashboard,
+    easymotion,
+    gitsigns,
+    html,
+    blankline,
+    lspsaga,
+    markdown,
+    nerdtree,
+    dap,
+    nvimtree,
+    sneak,
+    startify,
+    syntastic,
+    telescope,
+    treesitter,
+    gitgutter,
+    signify,
+    which
+)
 
-local function set_groups()
+vim.o.termguicolors = true
+vim.g.colors_name = "halcyon-re"
 
-    local groups = utils.update_table(
-        ale,
-        base,
-        bufferline,
-        coc,
-        common,
-        dashboard,
-        easymotion,
-        gitsigns,
-        html,
-        blankline,
-        lspsaga,
-        markdown,
-        nerdtree,
-        dap,
-        nvimtree,
-        sneak,
-        startify,
-        syntastic,
-        telescope,
-        treesitter,
-        gitgutter,
-        signify,
-        which
-    )
-
-    local overrides = vim.g.halcyon_overrides
-    if overrides then
-        vim.tbl_extend("force", groups, overrides)
-    end
-
-    for group, parameters in pairs(groups) do
-        utils.highlight(group, parameters)
-    end
-
-end
-
-function halcyon.colorscheme()
-    vim.api.nvim_command("hi clear")
-    if vim.fn.exists("syntax_on") then
-        vim.api.nvim_command("syntax reset")
-    end
-
-    vim.o.termguicolors = true
-    vim.g.colors_name = "halcyon-re"
-
-    set_groups()
-end
-
-return halcyon
+utils.load(groups)
