@@ -43,7 +43,7 @@ jamais.base = {
     PmenuSbar = {fg = c.orange},
     PmenuThumb = {fg = c.orange},
     Question = {fg = c.red, style = cfg.bold},
-    QuickFixLine = {fg = c.blue, bg = c.ui_grey, style = "bold, italic"},
+--    QuickFixLine = {fg = c.blue, bg = c.ui_grey, style = "bold, italic"},
     Search = {bg = c.grey},
     SpecialKey = {fg = c.blue},
 --    SpellBad = {fg = c.red, bg = c.none, style = "italic, undercurl"},
