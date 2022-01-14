@@ -56,7 +56,7 @@ jamais.base = {
     StatusLineTerm = {fg = c.fg, bg = c.bg},
     StatusLineTermNC = {fg = c.fg, bg = c.bg},
     --TabLineFill = {fg = "#000000", bg = c.red},
-    --TablineSel = {fg = '#000000' ,bg = c.accent, style = "italic"},
+    TablineSel = {bg = c.accent, style = "italic"},
     --Tabline = {fg = c.fg, bg = c.wb},
     Title = {fg = c.green, bg = c.none, style = cfg.bold},
     Visual = {fg = c.none, bg = c.grey},
