@@ -1,6 +1,7 @@
 local colors = {
-    wb = '#171c28',
-    bg = '#1d24331',
+    wb = '#171c281',
+    bg = '#1d2433',
+    bg2 = '#292d3e',
     fg = '#a2aabc',
     ui_grey = '#6679a4',
     accent = '#ffcc66',
@@ -14,6 +15,7 @@ local colors = {
     light_grey = '#8695b7',
     grey = '#2f3b54',
     dark_grey = '#1d2433',
+    linen = '#ddd78d',
     none = 'NONE'
 }
 
