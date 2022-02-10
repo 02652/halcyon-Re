@@ -14,7 +14,7 @@ end
 -- Settings editor
 
 jamais.base = {
-    Normal = {fg = c.fg, bg = set_transparent(c.bg)},
+    Normal = {fg = c.fg, bg = set_transparent(c.bg2)},
     SignColumn = {fg = c.blue, bg = c.none},
     EndOfBuffer = {fg = c.ui_grey},
     NormalFloat = {fg = c.fg, bg = c.grey},
@@ -30,7 +30,7 @@ jamais.base = {
     DiffDelete = {fg = c.red, bg = c.none, style = "reverse"},
     DiffText = {fg = c.red, bg = c.none, style = "reverse"},
     ErrorMsg = {fg = c.red},
-    Folded = {fg = c.fg, bg = c.bg},
+    Folded = {fg = c.fg, bg = c.bg2},
     FoldColumn = {fg = c.fg, bg = c.none},
     IncSearch = {fg = c.fg},
     LineNr = {fg = c.grey},
@@ -39,7 +39,7 @@ jamais.base = {
     ModeMsg = {fg = c.blue, style = cfg.bold},
     MoreMsg = {fg = c.blue, style = cfg.bold},
     NonText = {fg = c.green},
-    Pmenu = {fg = c.fg, bg = c.bg},
+    Pmenu = {fg = c.fg, bg = c.bg2},
     PmenuSel = {fg = c.orange, style = "bold"},
     PmenuSbar = {fg = c.orange},
     PmenuThumb = {fg = c.orange},
@@ -51,10 +51,10 @@ jamais.base = {
     SpellCap = {fg = c.blue, bg = c.none, style = "italic,undercurl"},
     SpellLocal = {fg = c.blue, bg = c.none, style = "italic,undercurl"},
     SpellRare = {fg = c.blue, bg = c.none, style = "italic,undercurl"},
-    StatusLine = {fg = c.blue, bg = c.bg},
+    StatusLine = {fg = c.blue, bg = c.bg2},
     StatusLineNC = {fg = c.gray},
-    StatusLineTerm = {fg = c.fg, bg = c.bg},
-    StatusLineTermNC = {fg = c.fg, bg = c.bg},
+    StatusLineTerm = {fg = c.fg, bg = c.bg2},
+    StatusLineTermNC = {fg = c.fg, bg = c.bg2},
     --TabLineFill = {fg = "#000000", bg = c.red},
     TablineSel = {bg = c.accent, style = "italic"},
     --Tabline = {fg = c.fg, bg = c.wb},
@@ -62,15 +62,15 @@ jamais.base = {
     Visual = {fg = c.none, bg = c.grey},
     VisualNOS = {fg = c.none, bg = c.grey},
     WarningMsg = {fg = c.red, style = cfg.bold},
-    WildMenu = {fg = c.bg, bg = c.blue, style = "bold"},
+    WildMenu = {fg = c.bg2, bg = c.blue, style = "bold"},
     CursorLine = {bg = c.grey},
-    ToolbarLine = {fg = c.bg, bg = c.bg},
+    ToolbarLine = {fg = c.bg2, bg = c.bg},
     ToolbarButton = {fg = c.fg, bg = c.none, style = "bold"},
     NormalMode = {fg = c.blue, bg = c.none, style = "reverse"},
     InsertMode = {fg = c.green, bg = c.none, style = "reverse"},
     ReplaceMode = {fg = c.red, bg = c.none, style = "reverse"},
     VisualMode = {fg = c.blue, bg = c.none, style = "reverse"},
-    VertSplit = {fg = c.bg},
+    VertSplit = {fg = c.bg2},
     CommandMode = {fg = c.grey, bg = c.none, style = "reverse"},
     Warnings = {fg = c.orange},
     healthError = {fg = c.red},
@@ -111,7 +111,7 @@ jamais.common = {
     SpecialComment = {fg = c.light_grey},
     Debug = {fg = c.green},
     Underlined = {fg = c.blue, bg = c.none, style = "underline"},
-    Ignore = {fg = c.grey},
+    Ignore = {fg = c.accent},
     Error = {fg = c.red, bg = c.none, style = "bold,underline"},
     Todo = {fg = c.green, bg = c.none, style = "bold,italic"}
 }
@@ -161,8 +161,8 @@ jamais.coc = {
     CocDiagnosticsHint = {fg = c.blue},
     CocSelectedText = {fg = c.red},
     CocCodeLens = {fg = c.grey},
-    CocErrorHighlight = {fg = c.red},
-    CocWarningHighlight = {fg = c.orange},
+    CocErrorHighlight = {fg = c.red, style = 'underline'},
+    CocWarningHighlight = {fg = c.orange, style = 'underline'},
     CocInfoHighlight = {fg = c.green},
     CocHintHighlight = {fg = c.blue},
     CocExplorerBufferFullPath = {fg = c.grey},
@@ -178,16 +178,16 @@ jamais.coc = {
     CocErrorVirtualText = {fg = c.red},
     CocInfoVirtualText = {fg = c.green},
     CocHintVirtualText = {fg = c.blue},
-    CocErrorLine = {fg = c.red},
-    CocWarningLine = {fg = c.orange},
+    --CocErrorLine = {fg = c.red},
+    --CocWarningLine = {fg = c.yellow, style = 'underline'},
     CocInfoLine = {fg = c.green},
-    CocHintLine = {fg = c.accent},
-    CocFadeOut = {fg = c.grey},
+    --CocHintLine = {fg = c.accent},
+    CocFadeOut = {fg = c.blue},
     CocStrikeThrough = {fg = c.grey},
     CocListMode = {fg = c.accent},
     CocListPath = {fg = c.accent},
     CocTreeOpenClose = {fg = c.grey},
-    HighlightedyankRegion = {fg = c.ui_grey},
+    --HighlightedyankRegion = {fg = c.ui_grey},
     CocSymbolFile = {fg = c.fg},
     CocSymbolModule = {fg = c.light_grey},
     CocSymbolNamespace = {fg = c.light_grey},
@@ -330,7 +330,7 @@ jamais.lspsaga = {
     DiagnosticInformation = {fg = c.blue},
     DiagnosticHint = {fg = c.blue},
     DiagnosticTruncateLine = {fg = c.fg},
-    LspFloatWinNormal = {bg = c.bg},
+    LspFloatWinNormal = {bg = c.bg2},
     LspFloatWinBorder = {fg = c.purple},
     LspSagaBorderTitle = {fg = c.blue},
     LspSagaHoverBorder = {fg = c.grey},
@@ -399,7 +399,7 @@ jamais.nerdtree = {
 
 jamais.nvimtree = {
     NvimTreeRootFolder = {fg = c.blue, style = "italic"},
-    NvimTreeNormal = {fg = c.fg, bg = set_transparent(c.bg)},
+    NvimTreeNormal = {fg = c.fg, bg = set_transparent(c.bg2)},
     NvimTreeGitDirty = {fg = c.yellow},
     NvimTreeGitNew = {fg = c.green},
 --    NvimTreeImageFile = {fg = c.purple},
@@ -416,8 +416,8 @@ jamais.nvimtree = {
 }
 
 jamais.sneak = {
-    Sneak = {fg = c.bg, bg = c.green},
-    SneakScope = {bg = c.bg},
+    Sneak = {fg = c.bg2, bg = c.green},
+    SneakScope = {bg = c.bg2},
     SneakLabel = {fg = c.fg}
 }
 
@@ -485,14 +485,14 @@ jamais.treesitter = {
     TSField = {fg = c.fg},
     TSFloat = {fg = c.purple},
     TSFuncMacro = {fg = c.green, style = "bold"},
-    TSInclude = {fg = c.red},
+    TSInclude = {fg = c.orange},
     TSKeywordOperator = {fg = c.orange},
     TSOperator = {fg = c.orange},
     TSLabel = {fg = c.orange},
     TSNamespace = {fg = c.yellow, style = "italic"},
     TSNone = {fg = c.fg},
     TSNumber = {fg = c.purple},
-    TSParameter = {fg = c.fg},
+    TSParameter = {fg = c.blue},
     TSParameterReference = {fg = c.fg},
     TSProperty = {fg = c.purple},
     TSPunctBracket = {fg = c.fg},
@@ -518,8 +518,8 @@ jamais.which = {
     WhichKeyGroup = {fg = c.light_grey, style = "italic"},
     WhichKeyDesc = {fg = c.blue, style = "bold"},
     WhichKeySeperator = {fg = c.green},
-    WhichKeyFloating = {bg = c.bg},
-    WhichKeyFloat = {bg = c.bg}
+    WhichKeyFloating = {bg = c.bg2},
+    WhichKeyFloat = {bg = c.bg2}
 }
 
 return jamais
