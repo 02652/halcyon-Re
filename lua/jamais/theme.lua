@@ -3,18 +3,10 @@ local utils = require("jamais.utils")
 local cfg = require("jamais.config").styles
 local jamais = {}
 
-local function set_transparent(color)
-    if not utils.is_valid(vim.g.jamais_transparent) then
-        return color
-    end
-
-    return c.none
-end
-
 -- Settings editor
 
 jamais.base = {
-    Normal = {fg = c.fg, bg = set_transparent(c.bg2)},
+    Normal = {fg = c.fg, bg = c.wb},
     SignColumn = {fg = c.blue, bg = c.none},
     EndOfBuffer = {fg = c.ui_grey},
     NormalFloat = {fg = c.fg, bg = c.grey},
@@ -83,10 +75,10 @@ jamais.common = {
     StorageClass = {fg = c.yellow},
     Structure = {fg = c.orange},
     Constant = {fg = c.purple},
-    Comment = {fg = c.light_grey, bg = c.none, style = cfg.italic_comment},
-    Conditional = {fg = c.orange, bg = c.none, style = cfg.italic_keyword},
-    Keyword = {fg = c.purple, bg = c.none, style = cfg.italic_keyword},
-    Repeat = {fg = c.purple, bg = c.none, style = cfg.italic_keyword},
+    Comment = {fg = c.light_grey, bg = c.none, style = "italic"},
+    Conditional = {fg = c.orange, bg = c.none, style = "italic"},
+    Keyword = {fg = c.purple, bg = c.none, style = "italic"},
+    Repeat = {fg = c.purple, bg = c.none, style = "italic"},
     Boolean = {fg = c.blue, bg = c.none, style = cfg.italic_boolean},
     Function = {fg = c.yellow, bg = c.none, style = cfg.italic_function .. cfg.bold},
     Identifier = {fg = c.yellow, bg = c.none, style = cfg.italic_variable},
@@ -94,15 +86,15 @@ jamais.common = {
     Character = {fg = c.orange},
     Number = {fg = c.purple},
     Float = {fg = c.purple},
-    Statement = {fg = c.purple},
+    Statement = {fg = c.purple, style = "italic"},
     Label = {fg = c.green},
     Operator = {fg = c.orange},
-    Exception = {fg = c.orange},
+    Exception = {fg = c.orange, style = "italic"},
     PreProc = {fg = c.yellow},
-    Include = {fg = c.orange},
-    Define = {fg = c.green},
+    Include = {fg = c.orange, style = "italic"},
+    Define = {fg = c.green, style = "italic"},
     Macro = {fg = c.orange},
-    Typedef = {fg = c.purple},
+    Typedef = {fg = c.purple, style = "italic"},
     PreCondit = {fg = c.orange},
     Special = {fg = c.purple, bg = c.none, style = "italic"},
     SpecialChar = {fg = c.orange},
@@ -399,7 +391,7 @@ jamais.nerdtree = {
 
 jamais.nvimtree = {
     NvimTreeRootFolder = {fg = c.blue, style = "italic"},
-    NvimTreeNormal = {fg = c.fg, bg = set_transparent(c.bg2)},
+    NvimTreeNormal = {fg = c.fg, bg = c.wb},
     NvimTreeGitDirty = {fg = c.yellow},
     NvimTreeGitNew = {fg = c.green},
 --    NvimTreeImageFile = {fg = c.purple},
