@@ -7,6 +7,7 @@ local colors = {
     accent = '#ffcc66',
     red = '#ef6b73',
     green = '#bae67e',
+    dark_green = '#B8DBE3',
     yellow = '#ffd580',
     orange = '#ffae57',
     blue = '#5ccfe6',
@@ -16,7 +17,8 @@ local colors = {
     grey = '#2f3b54',
     dark_grey = '#1d2433',
     linen = '#ddd78d',
-    none = 'NONE'
+    none = 'NONE',
+    cyan = "#6791c9"
 }
 
 
